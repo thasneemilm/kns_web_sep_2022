@@ -4,6 +4,7 @@ import Admission from "./pages/Admission";
 import Application from "./pages/Application";
 import Gallary from "./pages/Gallary";
 import Login from "./pages/Login";
+import Register from './pages/Register';
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
 
           <ul className="nav navbar-nav navbar-right">
           <li><Link to="login">Login</Link></li>
+          <li><Link to="register">Register</Link></li>
           </ul>
           </div>
         </div>
@@ -36,6 +38,7 @@ export default function App() {
           <Route exact path="admission" element={<Admission />} />
           <Route exact path="gallary" element={<Gallary />} />
           <Route exact path="login" element={<Login />} />
+          <Route exact path="register" element={<Register />} />
         
         </Routes>
       </Router>
